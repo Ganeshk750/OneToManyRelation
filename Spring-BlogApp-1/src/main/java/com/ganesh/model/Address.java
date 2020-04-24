@@ -13,6 +13,8 @@ public class Address extends AbstractPersistable<Long>{
 	private String city;
 	private String pin;
 	
+	private transient Long studentId;
+	
 	@ManyToOne
 	@JoinColumn(name="student_id")
 	private Student student;
@@ -41,6 +43,12 @@ public class Address extends AbstractPersistable<Long>{
 	}
 	public void setStudent(Student student) {
 		this.student = student;
+	}
+	public Long getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(Long studentId) {
+		this.studentId = studentId;
 	}
 	
 	
