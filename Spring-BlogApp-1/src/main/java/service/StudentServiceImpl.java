@@ -2,32 +2,43 @@ package service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.ganesh.model.Student;
 
-public class StudentServiceImpl implements StudentService {
+import repository.StudentRepository;
 
+public class StudentServiceImpl implements StudentService {
+	
+	private StudentRepository studentRepository;
+	
+   @Autowired	
+   public StudentServiceImpl(StudentRepository studentRepository) {
+	   this.studentRepository = studentRepository;
+    }
+   
 	@Override
 	public List<Student> studentList() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return studentRepository.findAll();
 	}
 
 	@Override
 	public Student findOne(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return studentRepository.getOne(id);
 	}
 
 	@Override
 	public Student addStudent(Student student) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return studentRepository.save(student);
 	}
 
 	@Override
 	public String deleteStudent(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		studentRepository.deleteById(id);
+		return "Student Deleted Successfully";
 	}
 
 }
