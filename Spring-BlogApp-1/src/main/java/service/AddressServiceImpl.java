@@ -3,11 +3,13 @@ package service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ganesh.model.Address;
 
 import repository.AddressRepository;
 
+@Service
 public class AddressServiceImpl implements AddressService {
 	
 	private AddressRepository addressRepository;

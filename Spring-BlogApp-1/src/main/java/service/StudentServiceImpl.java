@@ -3,11 +3,13 @@ package service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ganesh.model.Student;
 
 import repository.StudentRepository;
 
+@Service
 public class StudentServiceImpl implements StudentService {
 	
 	private StudentRepository studentRepository;
