@@ -8,7 +8,7 @@ public interface StudentService {
 	
     List<Student> studentList();
 	
-	Student findOne(String id);
+	Student findOne(Long long1);
 	
 	Student addStudent(Student student);
 	

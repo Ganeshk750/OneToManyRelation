@@ -33,14 +33,14 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public Address addAddress(Address address) {
-		
+		address.setStudent(studentRepo.findOne(address.getStudentId()));
 		return addressRepository.save(address);
 	}
 
 	@Override
 	public String deleteAddress(Long id) {
 		addressRepository.deleteById(id);
-		return "Address Deleted Successfully!!";
+		return "{'message':'Address Deleted Successfully!!'}";
 	}
 
 }
