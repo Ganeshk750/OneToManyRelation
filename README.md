@@ -1,4 +1,4 @@
-# OneToManyRelation
+# OneToMany Relation
 OneToMany
 # ManyToMany Impl
 Employee and Skill
