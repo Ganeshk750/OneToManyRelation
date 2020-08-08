@@ -1,6 +1,6 @@
 # OneToManyRelation
 OneToMany
-# ManyToManyImpl
+# ManyToMany Impl
 Employee and Skill
 # OneToOne Relation
  springJpaRestApis
