@@ -7,11 +7,12 @@ Employee and Skill
  `````
  OneToMany
  url path:-
+ ---------
  For Post
  ---------
  POST:- http://localhost:8080/posts
  GET:- http://localhost:8080/posts?page=0&size=2&sort=createAt,desc
- 
+ -----------
  For Comment:-
  -----------
  POST:- http://localhost:8080/posts/2/comments
