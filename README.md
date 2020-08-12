@@ -17,5 +17,6 @@ Employee and Skill
  -----------
  POST:- http://localhost:8080/posts/2/comments
  GET:- http://localhost:8080/posts/2/comments?page=0&size=3&sort=createAt,desc
+ DELETE:- http://localhost:8080/posts/2/comments/2
 
 `````
