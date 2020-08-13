@@ -8,8 +8,8 @@ Employee and Skill
 ````
 # OneToOne Relation
  springJpaRestApis
- `````
  OneToMany
+ `````
  url path:-
  ---------
  For Post
