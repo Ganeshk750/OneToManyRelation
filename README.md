@@ -2,6 +2,8 @@
 OneToMany
 # ManyToMany Impl
 Employee and Skill
+1.> In Application Main class
+2.> Using CommandLine Runner
 # OneToOne Relation
  springJpaRestApis
  `````
